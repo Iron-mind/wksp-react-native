@@ -4,13 +4,14 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from './components/home.js'
 
 const Stack = createStackNavigator();
+import Detail from './components/Detail.js';
 
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
-
+        <Stack.Screen name="Detail" component={Detail} />
       </Stack.Navigator>
     </NavigationContainer>
   );
