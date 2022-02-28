@@ -1,10 +1,15 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
 
- export default function Information() {
-   return (
-   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-     <Text>Normal component</Text>
+export default function Information({ image, name, description }) {
+ return (
+   <View style={styles.container}>
+     <Image
+       style={styles.image}
+       source={{uri: image}}
+     />
+     <Text style={styles.title}>{name}</Text>
+     <Text style={styles.description}>{description}</Text>
    </View>
-  );
- }
+ )
+}

@@ -7,23 +7,23 @@ const styles = StyleSheet.create({
     borderColor:"black",
     border: "2px solid",
     width:'100%',
-    maxHeight:30,
+    maxHeight:80,
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
     padding:3,
     flexDirection: 'row'
   },
   previewImage:{
-    height:20,
-    width:20,
+    height:70,
+    width:90,
     margin:4
   }
 });
-export default function CharacterCard({image, name,navigation}) {
+export default function CharacterCard({image,id, name,navigation}) {
 
   return (
 
-    <TouchableOpacity style={styles.container} onPress={()=>{console.log("nada"); navigation.navigate("Detail")}}>
+    <TouchableOpacity style={styles.container} onPress={()=>{ navigation.navigate("Detail",{name,image,id})}}>
 			<Image
         style={styles.previewImage}
 				source={image}
