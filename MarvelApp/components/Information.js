@@ -1,13 +1,50 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View,StyleSheet,Image } from 'react-native';
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'gray',
+    borderColor:"black",
+    border: "2px solid",
+    width:'100%',
+    height:"100%",
+    alignItems: 'center',
+    // justifyContent: 'center',
+    padding:3,
+    flexDirection: 'column'
+  },
+  image:{
+    width:"100%",
+    height:160,
 
+    margin:4
+  },
+  title:{
+    fontSize:20
+  },
+  description:{
+    fontSize:16
+
+  }
+});
+
+
+
+ // export default function Information() {
+ //   return (
+ //   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+ //     <Text>Normal component</Text>
+ //   </View>
+ //  );
+ // }
 export default function Information({ image, name, description }) {
+  console.log(image);
  return (
    <View style={styles.container}>
-     <Image
-       style={styles.image}
-       source={{uri: image}}
-     />
+   <Image
+      style={styles.image}
+      source={image}
+    />
      <Text style={styles.title}>{name}</Text>
      <Text style={styles.description}>{description}</Text>
    </View>

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/Ionicons';
-import { Text, View,  Image ,StyleSheet, TouchableOpacity} from 'react-native';
+import { Text, View,  Image } from 'react-native';
 import Information from './Information.js'
 import Comics from './Comics.js'
 const Tab = createBottomTabNavigator();
