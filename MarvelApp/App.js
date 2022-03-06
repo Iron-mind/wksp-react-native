@@ -8,7 +8,7 @@ import Detail from './components/Detail.js';
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer style={{backgroundColor:"#FF495C"}}>
       <Stack.Navigator>
         <Stack.Screen name="MarvelApp" component={Home} />
         <Stack.Screen name="Detail" component={Detail} />

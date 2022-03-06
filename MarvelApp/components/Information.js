@@ -3,19 +3,20 @@ import { Text, View,StyleSheet,Image } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'gray',
+    backgroundColor: '#FCFCFC',
     borderColor:"black",
     border: "2px solid",
     width:'100%',
     height:"100%",
     alignItems: 'center',
-    // justifyContent: 'center',
+    fontWeight:100,
+        // justifyContent: 'center',
     padding:3,
     flexDirection: 'column'
   },
   image:{
     width:"100%",
-    height:160,
+    height:190,
 
     margin:4
   },
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
  //  );
  // }
 export default function Information({ image, name, description }) {
-  console.log(image);
+  
  return (
    <View style={styles.container}>
    <Image

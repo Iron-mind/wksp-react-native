@@ -3,7 +3,7 @@ import { Text, View,  Image ,StyleSheet, TouchableOpacity} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#2596be',
+    backgroundColor: '#256EFF',
     borderColor:"black",
     border: "2px solid",
     width:'100%',
